@@ -23,5 +23,6 @@ request.get(apiUrl, { encoding: 'UTF-8' }, (error, response, body) => {
   });
 
   const jsonResult = JSON.stringify(completedTasksByUser, null, 2);
-  console.log(jsonResult);
+  const formattedJsonResult = jsonResult.replace(/"/g, "'");
+  console.log(formattedJsonResult);
 });
