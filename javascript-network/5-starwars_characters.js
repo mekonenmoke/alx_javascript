@@ -23,5 +23,5 @@ request.get(apiUrl, { encoding: 'UTF-8' }, (error, response, body) => {
       const character = JSON.parse(body);
       console.log(character.name);
     });
-  });
+  });j
 });
